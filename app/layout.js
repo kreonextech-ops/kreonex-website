@@ -2,8 +2,9 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import LenisScroll from "@/components/Lenis";
-import Navbar from "@/components/Navbar"; // Make sure this is imported
-import Footer from "@/components/Footer"; // Make sure this is imported
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import N8nChat from "@/components/N8nChat"; // Import the wrapper
 
 const poppins = Poppins({
     variable: "--font-poppins",
@@ -25,6 +26,10 @@ export default function RootLayout({ children }) {
                     <Navbar />
                     {children}
                     <Footer />
+                    
+                    {/* The Chat Widget */}
+                    <N8nChat />
+                    
                 </ThemeContextProvider>
             </body>
         </html>
