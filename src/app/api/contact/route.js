@@ -22,7 +22,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: 'kreonextech@gmail.com',
-      to: 'kreonextech@gmail.com',
+      to: 'info@kreonex.com, kreonextech@gmail.com',
       subject: `New Lead: ${name}`,
       text: `
 Name: ${name}
